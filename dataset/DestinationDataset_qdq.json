@@ -1,0 +1,22 @@
+{
+	"name": "DestinationDataset_qdq",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "targetstore",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "mytargetemployee.csv",
+				"container": "autodata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
