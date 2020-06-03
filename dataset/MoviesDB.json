@@ -1,0 +1,22 @@
+{
+	"name": "MoviesDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sourcedatastore",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "employee.csv",
+				"container": "sourcedata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
